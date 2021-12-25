@@ -2966,3 +2966,9 @@
 
 // Disable servo with M282 to reduce power consumption, noise, and heat when not in use
 //#define SERVO_DETACH_GCODE
+
+
+// Fix LCD artifacts
+#define ST7920_DELAY_1 DELAY_NS(400) // After CLK LOW
+#define ST7920_DELAY_2 DELAY_NS(400) // After DAT
+#define ST7920_DELAY_3 DELAY_NS(600) // After CLK HIGH
